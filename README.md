@@ -32,9 +32,9 @@ You have been provided with two data sets:
 1. ```policies_and_claims.parquet```: one row for each policy written by OmniInsure years 2021 through 2025. There
 is one row per policy per year. Cost of claims is also shown.
 
-2. UK Industry wide data for flood claims, per year, from 2000 through 2025.
+2. ```uk_industry_wide_annual_losses.parquet```: UK Industry wide data for flood claims, per year, from 2000 through 2025.
 
-We have also given you a little notebook to get you started understanding the data (task/getting_started.ipynb)
+We have also given you a little notebook to get you started understanding the data (src/solution/getting_started.ipynb)
 
 ## The rules
 
@@ -49,4 +49,4 @@ We have also given you a little notebook to get you started understanding the da
  - In the premium and claims data, you will find a couple of "rating factors" columns: ```Excess``` and ```Geographic Flood Risk```.
  Geographic Flood Risk is based on the address of the house, looked up on our in house "flood risk" map - which shows the level of flood risk at each geographic location.
 
- - ```Sum Insured``` is the expected rebuild cost of the building. We call it the "exposure measure" - because, all other things being equal, expected claims cost of a build, or of a whole portfolio, is roughly proportional to this measure. (Of course, if the building or portfolio mix is higher or lower geographic risk the expected claims cost will be higher or lower)
+ - ```Sum Insured``` is the expected rebuild cost of the building. We call it the "exposure measure", because, all other things being equal, expected claims cost of a building, or of a whole portfolio, is roughly proportional to this measure. (Of course, if the building or portfolio mix is higher or lower geographic risk the expected claims cost will be higher or lower)
